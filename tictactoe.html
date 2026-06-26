@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tictactoe.html" class="active">Tic-Tac-Toe</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Title -->
+        <h1>⚡ TIC TAC TOE ⚡</h1>
+
+        <!-- Subtitle -->
+        <p class="subtitle">
+            You (<span class="player">X</span>) vs
+            AI (<span class="ai">O</span>)
+        </p>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+
+            <div class="score-card">
+                <h2>You</h2>
+                <p id="playerScore">0</p>
+            </div>
+
+            <div class="score-card">
+                <h2>Draws</h2>
+                <p id="drawScore">0</p>
+            </div>
+
+            <div class="score-card">
+                <h2>AI</h2>
+                <p id="aiScore">0</p>
+            </div>
+
+        </div>
+
+        <!-- Game Status -->
+        <div class="status" id="status">
+            Your Turn
+        </div>
+
+        <!-- Tic Tac Toe Board -->
+        <div class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="restartBtn">
+                🔄 Restart Game
+            </button>
+
+            <button id="newGameBtn">
+                🎮 New Match
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Made with ❤️ by Emaan Zeeshan
+    </footer>
+
+    <script src="tictactoe.js"></script>
+
+</body>
+
+</html>
